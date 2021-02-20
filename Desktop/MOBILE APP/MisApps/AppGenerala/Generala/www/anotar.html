@@ -1,0 +1,113 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="anotar">
+    <div class="navbar">
+        <div class="navbar-bg bg-color-deeppurple"></div>
+        <div class="navbar-inner">
+        <div class="left">
+            <i class="icon f7-icons color-white">pencil_circle_fill</i>
+        </div>
+        <div class="title text-color-white">Anotador</div>
+        </div>
+    </div>
+    <div class="toolbar toolbar-bottom bg-color-deeppurple">
+                    <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="#" class="link color-white" id='btnTerminar'>Terminar</a>
+                    <a href="#" data-popup=".my-popup" class="link color-white popup-open">Reglas</a>
+                    <a href="#" class="link color-white" id='btnLimpiar'>Limpiar</a>
+                    </div>
+                </div>
+    <div id="pageAn" class="page-content color-theme-deeppurple text-color-white">
+        <div class="block text-align-center">
+        	<div class="row">
+		        <div id="puntajes" class="col">
+		        	
+		        	<input type="button" class="btnPnj" value="PUNTAJES" disabled><br>
+                    <input type="button" class="btnPnj" value="UNO" disabled><br>
+                    <input type="button" class="btnPnj" value="DOS" disabled><br>
+                    <input type="button" class="btnPnj" value="TRES" disabled><br>
+                    <input type="button" class="btnPnj" value="CUATRO" disabled><br>
+                    <input type="button" class="btnPnj" value="CINCO" disabled><br>
+                    <input type="button" class="btnPnj" value="SEIS" disabled><br>
+                    <input type="button" class="btnPnj" value="ESCALERA" disabled><br>
+                    <input type="button" class="btnPnj" value="FULL" disabled><br>
+                    <input type="button" class="btnPnj" value="POKER" disabled><br>
+                    <input type="button" class="btnPnj" value="GENERALA" disabled><br>
+                    <input type="button" class="btnPnj" value="D.GENERALA" disabled><br>
+                    <input type="button" class="btnTotal" value="TOTAL" disabled>
+		        </div>
+                <div class="col">
+    		        <div id="LJugador1" class="col jugador">Jugador 1</div>
+    		        	<div id="j1d1" class="acdj1 Divclick tabla" dado="1">0</div>
+    		        	<div id="j1d2" class="acdj1 Divclick tabla" dado="2">0</div>
+    		        	<div id="j1d3" class="acdj1 Divclick tabla" dado="3">0</div>
+    		        	<div id="j1d4" class="acdj1 Divclick tabla" dado="4">0</div>
+                        <div id="j1d5" class="acdj1 Divclick tabla" dado="5">0</div>
+                        <div id="j1d6" class="acdj1 Divclick tabla" dado="6">0</div>
+                        <div id="j1d7" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j1d8" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j1d9" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j1d10" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j1d11" class="acjj1 juegoClick tabla">0</div>
+                        <div id="totalj1" class="taTotal">0</div>
+                </div>
+                <div class="col">
+    		        <div id="LJugador2" class="col jugador">Jugador 2</div>
+    		        	<div id="j2d1" class="acdj1 Divclick2  tabla" dado="1">0</div>
+                        <div id="j2d2" class="acdj1 Divclick2 tabla" dado="2">0</div>
+                        <div id="j2d3" class="acdj1 Divclick2 tabla" dado="3">0</div>
+                        <div id="j2d4" class="acdj1 Divclick2 tabla" dado="4">0</div>
+                        <div id="j2d5" class="acdj1 Divclick2 tabla" dado="5">0</div>
+                        <div id="j2d6" class="acdj1 Divclick2 tabla" dado="6">0</div>
+                        <div id="j2d7" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j2d8" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j2d9" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j2d10" class="acjj1 juegoClick tabla">0</div>
+                        <div id="j2d11" class="acjj1 juegoClick tabla">0</div>                       
+                        <div id="totalj2" class="taTotal">0</div>
+		    	</div>
+		    </div>
+        </div>
+
+
+        <div class="popup my-popup">
+            <div class="view">
+                <div class="page">
+                    <div class="navbar">
+                        <div class="navbar-bg bg-color-deeppurple"></div>
+                    <div class="navbar-inner">
+                        <div class="title text-color-white">REGLAMENTO GENERALA</div>
+                        <div class="right text-color-white">
+                            <!-- Link to close popup -->
+                            <a class="link popup-close icon f7-icons color-white">xmark_circle</a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="page-content text-align-center">
+                    	<div class="block">
+                                <p>OBJETIVO: Lograr el máximo puntaje.</p>
+                                <p>DESARROLLO
+                                Cada jugador puede hacer hasta tres tiros por turno.
+                                Hay diez vueltas por juego, excepto cuando un jugador hace generala servida.
+                                El participante debe hacer una categoría por vuelta. Por lo cual, al final del juego cada jugador tendrá puntaje en cada una de las diez categorías.
+                                El jugador comienza tirando los cinco dados. Si obtiene en los cinco el mismo número habrá hecho generala servida y automáticamente gana el juego.
+                                Si en su primer tiro el jugador hace un "juego mayor", apartará el o los dados que desee conservar y hará su segundo tiro con los restantes. Si así lo quiere, puede arrojar nuevamente los cinco dados, pues no está obligado todavía a elegir una categoría.
+                                Si el jugador hace un "juego mayor" dentro de sus tres tiros, siempre que la categoría elegida esté abierta, se anotará el puntaje en la casilla correspondiente.
+                                Si no hace un "juego mayor" en sus tres tiros, debe elegir una categoría de números (1 a 6) y anotar el puntaje en la casilla.
+                                El (1) sirve de comodín: se lo puede usar como 2 o como 6 para completar una escalera.</p>
+                                <p>PUNTAJE:
+                                Números: se multiplica el total de dados donde éste aparece por dicho número. Por ejemplo: tres 6 valen 18 puntos para el seis; dos 4 valen 8 puntos para el cuatro.
+                                Generala: Se forma cuando después del segundo o tercer tiro se logran los cinco dados con un mismo número y vale 60 puntos. Cuando esto se logra de un solo tiro, se llama generala servida y el jugador automáticamente gana el juego.
+                                Pócker: cuatro de un mismo número. Si es servido vale 45 puntos, en caso contrario 40
+                                Full: tres de un mismo número y un par. Si es servido vale 35 puntos, de lo contrario 30.
+                                Escalera: (1-2-3-4-5 o 2-3-4-5-6). Si es servida se le otorgan 25 puntos y si no lo es, 20
+                                </p>
+                		</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>

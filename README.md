@@ -24,7 +24,7 @@
 
 **Screens - Preview**
 
-https://github.com/victoriabravo/Anotador-de-Generala/blob/main/www/screens/generala%20portada.png
+![](https://github.com/victoriabravo/Anotador-de-Generala/blob/main/www/screens/generala%20portada.png)
 
 https://github.com/victoriabravo/Anotador-de-Generala/blob/main/www/screens/pantalla1.png
 
